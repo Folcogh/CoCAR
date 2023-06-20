@@ -1,0 +1,3 @@
+- settings: VisionControl location
+- settings: time to boot VC
+- Mainwindow: display VC process status in the status line

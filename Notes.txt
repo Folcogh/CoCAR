@@ -1,0 +1,2 @@
+- QProcess::start() is not asynchronous, so it's must be run from a separate QThread which listens for the signals of the main window (kill, reboot, etc)
+- The VC QProcess emits a signal for attention of the UI and the QThread which handles the PLC connection when it is live
