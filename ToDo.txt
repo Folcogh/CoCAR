@@ -1,3 +1,7 @@
 - settings: VisionControl location
 - settings: time to boot VC
-- Mainwindow: display VC process status in the status line
+- settings: start VC on startup
+- settings: max log size
+- settings: run monitoring on start-up
+- main window: display VC process status in the status line
+- main window: message on hover to explane the buttons

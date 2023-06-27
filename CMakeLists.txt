@@ -13,10 +13,15 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
+        DlgSettings.cpp
+        DlgSettings.hpp
+        DlgSettings.ui
         main.cpp
         MainWindow.cpp
         MainWindow.hpp
         MainWindow.ui
+        ThreadVisionControl.cpp
+        ThreadVisionControl.hpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

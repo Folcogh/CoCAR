@@ -1,7 +1,9 @@
 #ifndef MAINWINDOW_HPP
 #define MAINWINDOW_HPP
 
+#include <QEvent>
 #include <QMainWindow>
+#include "ThreadVisionControl.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,8 +16,11 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    bool event(QEvent *event) override;
 
 private:
     Ui::MainWindow *ui;
+    QEvent *StartEvent;
+    ThreadVisionControl *ThreadVC;
 };
 #endif // MAINWINDOW_HPP

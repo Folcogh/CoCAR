@@ -6,15 +6,92 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>557</width>
-    <height>376</height>
+    <width>450</width>
+    <height>697</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>CoCAR - Cognex Camera Automatic Reboot</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_3">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>Process</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="text">
+            <string>Run Vision Controller</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Reboot Vision Controller</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>Run Monitoring</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>Pause Monitoring</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>Misc.</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>Settings</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string>View log</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
     <item>
      <widget class="QGroupBox" name="BoxPeriodicReboot">
       <property name="title">
@@ -57,24 +134,17 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox_3">
-           <property name="suffix">
-            <string> minutes</string>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
-           <property name="maximum">
-            <number>59</number>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="spinBox_4">
-           <property name="suffix">
-            <string> seconds</string>
-           </property>
-           <property name="maximum">
-            <number>59</number>
-           </property>
-          </widget>
+          </spacer>
          </item>
         </layout>
        </item>
@@ -110,49 +180,49 @@
        <item>
         <widget class="QCheckBox" name="OnAlarm0">
          <property name="text">
-          <string>Alarm 0</string>
+          <string>Vision system controller is not connected</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="OnAlarm1">
          <property name="text">
-          <string>Alarm 1</string>
+          <string>Vision analysis application did not start</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="OnAlarm2">
          <property name="text">
-          <string>Alarm 2</string>
+          <string>3D sensor is not connected</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="OnAlarm3">
          <property name="text">
-          <string>Alarm 3</string>
+          <string>Acquired image issue</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="OnAlarm4">
          <property name="text">
-          <string>Alarm 4</string>
+          <string>Acquired image issue</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="OnAlarm5">
          <property name="text">
-          <string>Alarm 5</string>
+          <string>Encoder overrun (Detected PM speed too high)</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_3">
          <property name="text">
-          <string>Alarm 6</string>
+          <string>Encoder fault</string>
          </property>
         </widget>
        </item>
@@ -160,69 +230,20 @@
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>Run</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="text">
-         <string>Pause</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="text">
-         <string>View log</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="text">
-         <string>Settings</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>Reboot now</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Log</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </item>
    </layout>
   </widget>
