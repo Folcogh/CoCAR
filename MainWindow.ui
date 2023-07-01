@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>450</width>
-    <height>697</height>
+    <height>479</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>CoCAR - Cognex Camera Automatic Reboot</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
@@ -93,136 +93,29 @@
      </layout>
     </item>
     <item>
-     <widget class="QGroupBox" name="BoxPeriodicReboot">
+     <widget class="QGroupBox" name="groupBox_4">
       <property name="title">
-       <string>Periodic reboot</string>
+       <string>Reboot</string>
       </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-      <property name="checked">
-       <bool>false</bool>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QCheckBox" name="checkBox">
-           <property name="text">
-            <string>Force a reboot after:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="spinBox">
-           <property name="suffix">
-            <string> days</string>
-           </property>
-           <property name="maximum">
-            <number>365</number>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="spinBox_2">
-           <property name="suffix">
-            <string> hours</string>
-           </property>
-           <property name="maximum">
-            <number>23</number>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="text">
+          <string>Before each production</string>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_2">
          <property name="text">
-          <string>Wait until the end of the production</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="BoxRebootOnAlarm">
-      <property name="title">
-       <string>Conditionnal reboot</string>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-      <property name="checked">
-       <bool>false</bool>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Reboot on :</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="OnAlarm0">
-         <property name="text">
-          <string>Vision system controller is not connected</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="OnAlarm1">
-         <property name="text">
-          <string>Vision analysis application did not start</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="OnAlarm2">
-         <property name="text">
-          <string>3D sensor is not connected</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="OnAlarm3">
-         <property name="text">
-          <string>Acquired image issue</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="OnAlarm4">
-         <property name="text">
-          <string>Acquired image issue</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="OnAlarm5">
-         <property name="text">
-          <string>Encoder overrun (Detected PM speed too high)</string>
+          <string>Periodically</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_3">
          <property name="text">
-          <string>Encoder fault</string>
+          <string>On alarm</string>
          </property>
         </widget>
        </item>
